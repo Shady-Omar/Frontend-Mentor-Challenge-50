@@ -194,7 +194,8 @@ h1 {
 }
 
 #social {
-  bottom: 5%;
+  position: absolute;
+  bottom: -13rem;
   width: 40%;
 }
 
