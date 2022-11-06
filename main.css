@@ -1,0 +1,205 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url(images/pattern-hills.svg) no-repeat bottom, url(images/bg-stars.svg) center, linear-gradient(to bottom, hsl(234, 17%, 12%), 85%, hsl(345, 95%, 68%));
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-3rem);
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: hsl(345, 95%, 68%);
+  width: 40%;
+  font-size: 4em;
+  margin: 5rem 0;
+}
+
+#countdown div {
+  padding: 2rem;
+  background-color: hsl(236, 21%, 26%);
+  margin: 1rem;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 24px;
+}
+
+#days {
+  position: relative;
+}
+
+#days::after {
+  content: 'DAYS';
+  position: absolute;
+  font-size: 14px;
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 0.3em;
+  bottom: -25%;
+}
+
+#hours {
+  position: relative;
+}
+
+#hours::after {
+  content: 'HOURS';
+  position: absolute;
+  font-size: 14px;
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 0.3em;
+  bottom: -25%;
+}
+
+#minutes {
+  position: relative;
+}
+
+#minutes::after {
+  content: 'MINUTES';
+  position: absolute;
+  font-size: 14px;
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 0.3em;
+  bottom: -25%;
+}
+
+#seconds {
+  position: relative;
+}
+
+#seconds::after {
+  content: 'SECONDS';
+  position: absolute;
+  font-size: 14px;
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 0.3em;
+  bottom: -25%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social {
+  position: fixed;
+  bottom: 10%;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social img {
+  width: 15%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#social img:hover {
+  filter: invert(51%) sepia(71%) saturate(1332%) hue-rotate(309deg) brightness(98%) contrast(100%);
+}
+
+@media (max-width: 767px) {
+  html,body{
+      overflow-x: hidden;
+  }
+
+  body {
+    background: url(images/pattern-hills.svg) no-repeat 100% bottom, url(images/bg-stars.svg) no-repeat center, linear-gradient(to bottom, hsl(234, 17%, 12%), 85%, hsl(345, 95%, 68%));
+    background-size: auto;
+}
+
+main {
+  width: 85%;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+#countdown {
+  font-size: 2em;
+}
+
+#countdown div {
+  padding: 1rem;
+  margin: 0.5rem;
+  min-width: 75px;
+}
+
+#days::after {
+  font-size: 10px;
+  bottom: -35%;
+}
+
+#hours::after {
+  font-size: 10px;
+  bottom: -35%;
+}
+
+#minutes::after {
+  font-size: 10px;
+  bottom: -35%;
+}
+
+#seconds::after {
+  font-size: 10px;
+  bottom: -35%;
+}
+
+#social {
+  bottom: 5%;
+  width: 40%;
+}
+
+#social img {
+  width: 20%;
+}
+
+}
