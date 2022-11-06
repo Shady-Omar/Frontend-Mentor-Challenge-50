@@ -153,6 +153,7 @@ footer {
   body {
     background: url(images/pattern-hills.svg) no-repeat 100% bottom, url(images/bg-stars.svg) no-repeat center, linear-gradient(to bottom, hsl(234, 17%, 12%), 85%, hsl(345, 95%, 68%));
     background-size: auto;
+    overflow-y: hidden;
 }
 
 main {
